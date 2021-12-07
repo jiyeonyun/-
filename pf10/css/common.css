@@ -1,0 +1,79 @@
+@charset "UTF-8";
+.wrap {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.h1 {
+  font-size: 34px;
+}
+.h2 {
+  font-size: 30px;
+}
+.h3 {
+  font-size: 26px;
+}
+.h4 {
+  font-size: 22px;
+}
+.h5 {
+  font-size: 18px;
+}
+.h6 {
+  font-size: 14px;
+}
+.p {
+  font-size: 14px;
+}
+.small {
+  font-size: 11px;
+}
+.block {
+  display: block;
+}
+.hide {
+  display: none;
+}
+.padding-top-80 {
+  padding-top: 80px;
+}
+.padding40 {
+  padding: 10px 0;
+}
+.padding-bottom-40 {
+  padding-bottom: 40px;
+}
+.padding80 {
+  padding: 80px 0;
+}
+@font-face {
+  font-family: "SBAggroL";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SBAggroL.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+section{
+  min-height: 900px;
+}
+.show{
+display: block;
+box-shadow: none;
+position: fixed;
+width: 100%;
+background-color: #fff;
+}
+.ulshow{
+  flex-direction: column;
+background-color: #fff;
+justify-content: start;
+align-items: center;
+height: 100vh;
+}
+.lishow{
+  width: unset;
+height: unset;
+}
+.ashow{
+  height: 100%;
+display: block;
+}

@@ -1,0 +1,187 @@
+main {
+  text-align: center;
+}
+main #about {
+  padding: 80px 0;
+  position: relative;
+  height: 100%;
+}
+.clickhide {
+  display: none;
+}
+main #about > h2 {
+  transform: rotate(90deg);
+  position: absolute;
+  top: 40%;
+}
+main #about .keywords {
+  padding: 80px 0;
+}
+main #about .keywords ul.key {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+  margin: 40px;
+}
+main #about .keywords ul.key li {
+}
+main #about .keywords ul.key li a {
+}
+main #about .keywords ul.key li p {
+}
+main #about .keywords p.mention {
+  font-size: 24px;
+}
+main #about .keywords a.mention {
+  font-style: italic;
+}
+main #about .edu {
+}
+main #about .edu h2 {
+}
+main #about .edu ul {
+  display: flex;
+  justify-content: center;
+}
+main #about .edu ul li {
+  list-style: none;
+  padding: 0 50px;
+}
+main #about .edu ul li h3 {
+}
+main #about .edu ul li p {
+}
+main #about .skill {
+}
+main #about .skill > h2 {
+}
+main #about .skill ul {
+  display: flex;
+  justify-content: center;
+}
+main #about .skill ul li {
+  list-style: none;
+  padding: 0 30px;
+}
+main #about .skill ul li h2 {
+}
+main #about .skill ul li span {
+  display: block;
+}
+main #about .skill ul li img {
+}
+main #portfolio {
+  padding: 80px 0;
+  position: relative;
+  height: 100%;
+  background-color: #f0eccc;
+}
+main #portfolio > h2 {
+  transform: rotate(90deg);
+  position: absolute;
+  top: 40%;
+}
+main #portfolio .pfwrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+}
+main #portfolio .pf {
+  width: 350px;
+  padding: 20px 30px;
+  position: relative;
+}
+main #portfolio .pf:hover div.hop{
+  display: block;
+  
+}
+main #portfolio .pf h3 {
+  position: absolute;
+  opacity: 0;
+  top: 999px;
+}
+main #portfolio .pf img {
+  width: 100%;
+  box-shadow: 5px 5px 5px 5px #8080801a;
+} 
+main #portfolio .hop {
+   display: none;
+  position: absolute;
+  height: 88%;
+  top: 20px;
+  width: 83%; 
+  background-color: #000000ad; 
+  /*! padding: 20px 30px; */
+  box-sizing: border-box;
+}
+main #portfolio .hop a{
+  width: 100%;
+  height: 100%;
+   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+main #portfolio .hop h1 {
+  font-size: 22px;
+  line-height: 4;
+}
+main #portfolio .hop p {
+  font-weight: bold;
+}
+main #portfolio .hop p span {
+  font-weight: normal;
+  padding-left: 5px;
+}
+main #portfolio .hop p.go {
+  line-height: 4;
+  font-size: 14px;
+}
+main #thankyou {
+  position: relative;
+  height: 100%;
+  padding: 80px 0;
+  width: 100%;
+}
+main #thankyou > h2 {
+  transform: rotate(90deg);
+  position: absolute;
+  top: 40%;
+}
+main #thankyou .thanks {
+  width: 100%; 
+  padding: 80px;
+  position: relative;
+  height: 900px;
+}
+main #thankyou .thanks .ment {
+  float: left;
+  display: block;
+  text-align: left;
+}
+main #thankyou .thanks .ment h2 {
+  font-size: 44px;
+  font-weight: bold;
+  line-height: 2;
+}
+main #thankyou .thanks .ment p {
+  font-size: 30px;
+  font-weight: normal;
+}
+main #thankyou .thanks .info {
+  position: absolute;
+  right: 0;
+  bottom: 300px;
+}
+main #thankyou .thanks .info span.adress {
+  font-size: 24px;
+  font-weight: bold;
+  padding-right: 15px;
+  line-height: 1.5; 
+}
+main #thankyou .thanks .info span.detail {
+}
+
+.wrap {
+}
