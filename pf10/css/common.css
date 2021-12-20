@@ -54,6 +54,7 @@
 }
 section{
   min-height: 900px;
+  position: relative; 
 }
 .show{
 display: block;

@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/title.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript" src="./js/jquery-1.6.2.min.js"></script>
     <script src="https://kit.fontawesome.com/d3a92e2a8f.js" crossorigin="anonymous"></script>
     <script src="./js/click.js"></script>
@@ -18,9 +20,12 @@
 </head>
 <body>
     <!-- 상단영역 -->
+    <div class="hamberger">
+        <a href=""><i class="fas fa-bars"></i></a>
+    </div>
     <div class="quick_menu">
         <ul>
-            <li><a href="">
+            <li><a href="https://github.com/jiyeonyun">
                 <i class="fab fa-github"></i>
             </a></li>
             <li><a href="">
@@ -46,8 +51,9 @@
     <div id="title">
         <h2 class="h2">welcome</h2>
         <div class="wrap">
-            <div class="banner_title">
-                <h3>
+            <div class="banner_title" data-aos="fade-up" data-aos-delay="50"
+            data-aos-duration="1500">
+                <h3> 
                     EVER-GROWING
                 </h3>
                 <h4>
@@ -58,6 +64,7 @@
                     매일 기록하고 도전하는<br>
                     웹 퍼블리셔 윤지연입니다.
                 </p>
+                <a href="">이력서 바로가기</a>
             </div>
         <div class="me">
             <img src="img/header.png" alt="">
@@ -69,78 +76,65 @@
     <!-- 메인영역 -->
     <main>
         <!-- about -->
-        <section id="about">
+        <section id="about" >
             <h2 class="h2">About</h2>
-            <div class="wrap">
-                <!-- <div class="keywords">
-                    <ul class="key">
-                        <li>
-                            <a href="">responsibility</a>
-                            <p>책임감있는</p>
-                        </li>
-                        <li>
-                            <a href="">Flexible</a>
-                            <p>유연한</p>
-                        </li>
-                        <li>
-                            <a href="">Challenging</a>
-                            <p>도전정신이있는</p>
-                        </li>
-                    </ul>
-                    
-                    <a href="" class="mention">web publisher</a>
-                    <p class="mention">윤지연 입니다</p>
-                </div>
-                <div class="edu">
-                    <h2>Edu</h2>
-                    <ul>
-                        <li>
-                            <h3>계명대학교</h3>
-                            <p>경영정보학과</p>
-                            <p>2017.03~2021.08(졸업)</p>
-                        </li>
-                        <li>
-                            <h3>그린컴퓨터 아카데미</h3>
-                            <p>UI/UX 웹디자이너/웹퍼블리셔 과정</p>
-                            <p>2021.07~2022.01(수료)</p>
-                        </li>
-                    </ul>
-                </div>
-                <div class="skill">
-                    <h2>Skill</h2>
-                    <ul>
-                        <li>
-                            <h3>HTML</h3>
-                            <span><img src="" alt="">HTML5</span>
-                        </li>
-                        <li>
-                            <h3>CSS</h3>
-                            <span><img src="" alt="">Scss</span>
-                        </li>
-                        <li>
-                            <h3>JS</h3>
-                            <span><img src="" alt="">Javascript</span>
-                            <span><img src="" alt="">Jqurey</span>
-                        </li>
-                        <li>
-                            <h3>DESIGN</h3>
-                            <span><img src="" alt="">Illustrator</span>
-                            <span><img src="" alt="">Photoshop</span>
-                        </li>
-                    </ul> -->
+            <div class="wrap" data-aos="fade-left" data-aos-delay="50"
+            data-aos-duration="2000">
+                    <div class="title_area">
+                    </div>
+                    <div class="inner">
+                        <div class="main_tit">
+                            <p>
+                                <span class="color"><i class="fas fa-check"></i>#개발 #퍼블리싱 #협업</span><br>
+                                열심히 기본기를 다졌어요 
+                            </p>
+                            <ul class="skillimg">
+                                <li><img src="./img/cssicon.png" alt=""></li>
+                                <li><img src="./img/htmlion.png"" alt=""></li>
+                                <li><img src="./img/jsicon.png" alt=""></li>
+                                <li><img src="./img/jqueryicon.png" alt=""></li>
+                                <li><img src="./img/photoshop.png" alt=""></li>
+                                <li><img src="./img/illustrator.png" alt=""></li>
+                                <li><img src="./img/github.png" alt=""></li>
+                                <li><img src="./img/sass_.png" alt=""></li>
+                                <li><img src="./img/react.png" alt=""></li>
+                                <li><img src="./img/vs.jpg" alt=""></li>
+                            </ul>
+                        </div>
+                        <div class="skils_list">
+                            <ul>
+                                <li class="skils_item">
+                                    <span class="xi-check"><i class="fas fa-check"></i><strong>HTML + CSS</strong></span>
+                                    <p>콘텐츠 내용에 알맞은 시맨틱 태그를 사용하여 코드를 작성합니다.</p>
+                                    <p>웹 표준 및 웹 접근성을 준수하여 반응형 레이아웃을 제작할 수 있습니다.</p>
+                                </li>
+                                <li class="skils_item">
+                                    <span class="xi-check"><i class="fas fa-check"></i><strong>JavaScript + jQuery</strong></span>
+                                    <p>자바스크립트 ES6문법을 이해하고 활용할 수 있습니다.</p>
+                                    <p>제이쿼리를 활용하여 다양한 애니메이션과 기능을 구현할 수 있습니다.</p>
+                                </li>
+                                <li class="skils_item">
+                                    <span class="xi-check"><i class="fas fa-check"></i><strong>Co-work</strong></span>
+                                    <p>원활한 협업을 위해 다양한 분야의 지식을 배우고 적용하며 공유합니다.</p>
+                                    <p>디자이너, 개발자와 가깝게 일하며, 함께 좋은 결과물을 만들고자 노력합니다.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div></section>
                 </div>
         </section>
         <!-- portfolio -->
-        <section id="portfolio">
+        <section id="portfolio" >
             <h2 class="h2">Portfolio</h2>
-            <div class="wrap">
+            <div class="wrap" data-aos="fade-right" data-aos-delay="50"
+            data-aos-duration="2000">
                 <div class="pfwrap">
                         <div class="pf">
-                            
                             <h3>SM그룹</h3>
                             <img src="img/pf1.jpeg" alt="">
                             <div class="hop">
-                                <a href="">
+                                <a href="./sm서브/kac.html">
                                 <h1>SM그룹</h1>
                                 <p>제작기간:<span>7일</span></p>
                                 <p>퍼블리싱:7일</p>
@@ -153,7 +147,7 @@
                             <h3>빙그레 리뉴얼</h3>
                             <img src="img/pf2.jpeg" alt="">
                              <div class="hop">
-                                <a href="">
+                                <a href="./빙그레서브/kac.html">
                                 <h1>빙그레 리뉴얼</h1>
                                 <p>제작기간:<span>9일</span></p>
                                 <p>디자인:4일 퍼블리싱:5일</p>
@@ -166,7 +160,7 @@
                             <h3>한화그룹</h3>
                             <img src="img/pf3.jpeg" alt="">
                             <div class="hop">
-                                <a href="">
+                                <a href="./한화그룹서브/kac.html">
                                 <h1>한화그룹</h1>
                                 <p>제작기간:<span>2일</span></p>
                                 <p>퍼블리싱:2일</p>
@@ -179,7 +173,7 @@
                             <h3>한국예술문화위원회</h3>
                             <img src="img/pf4.jpeg" alt="">
                             <div class="hop">
-                                <a href="">
+                                <a href="./한국예술서브/">
                                 <h1>한국예술문화위원회</h1>
                                 <p>제작기간:<span>7일</span></p>
                                 <p>퍼블리싱:7일</p>
@@ -218,7 +212,7 @@
                                     <h3>바라보다</h3>
                                     <img src="img/pf7.jpeg" alt="">
                                     <div class="hop">
-                                        <a href="">
+                                        <a href="./바라보다서브/kac.html">
                                         <h1>바라보다</h1>
                                         <p>제작기간:<span>8일</span></p>
                                         <p>퍼블리싱:8일</p>
@@ -229,9 +223,9 @@
                                 </div>
                                 <div class="pf">
                                     <h3>바라보다리뉴얼</h3>
-                                    <img src="img/pf8.JPEG" alt="">
+                                    <img src="./img/pf8.jpeg" alt="">
                                     <div class="hop">
-                                        <a href="">
+                                        <a href="./바라보다리뉴얼서브/kac.html">
                                         <h1>바라보다 리뉴얼</h1>
                                         <p>제작기간:<span>3일</span></p>
                                         <p>디자인:1일 퍼블리싱:2일</p>
@@ -240,13 +234,179 @@
                                     </a>
                                     </div>
                                 </div>
+                                <div class="pf">
+                                    <h3>윤현몰</h3>
+                                    <img src="./img/pf99.jpeg" alt="">
+                                    <div class="hop">
+                                        <a href="">
+                                        <h1>윤현몰</h1>
+                                        <p>제작기간:<span>3일</span></p>
+                                        <p>디자인:1일 퍼블리싱:2일</p>
+                                        <p>HTML5,CSS,jquery,반응형</p>
+                                        <p class="go">상세페이지 바로가기</p>
+                                    </a>
+                                    </div>
+                                </div>
+                </div>
+                <div class="mobilepfwrap">
+                    <ul>
+                        <li>
+                            <div class="contentswrap">
+                            <img src="./img/pf1.jpeg" alt="">
+                            <h2>SM그룹</h2>
+                        </div>
+                            <div class="textwrap">
+                                <p>제작기간:7일 <br> 퍼블리싱:7일</p>
+                                <p>HTML5,CSS</p>
+                                <a class="go">상세페이지 바로가기</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contentswrap">
+                            <img src="./img/pf2.jpeg" alt="">
+                            <h2>빙그레<br> 리뉴얼</h2>
+                            </div>
+                            <div class="textwrap">
+                                <p>제작기간:9일 <br> 디자인:4일 퍼블리싱:5일</p>
+                                <p>HTML5,CSS,<br>반응형</p>
+                                <a class="go">상세페이지 바로가기</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contentswrap">
+                            <img src="./img/pf3.jpeg" alt="">
+                            <h2>한화그룹</h2>
+                                </div>
+                            <div class="textwrap">
+                                <p>제작기간:2일 <br>퍼블리싱:2일</p>
+                                <p>HTML5,CSS</p>
+                                <a class="go">상세페이지 바로가기</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contentswrap">
+                            <img src="./img/pf4.jpeg" alt="">
+                            <h2>한국예술<br>문화위원회</h2>
+                            </div>
+                            <div class="textwrap">
+                                <p>제작기간:7일<br>퍼블리싱:7일</p>
+                                <p>HTML5,CSS,<br>반응형</p>
+                                <a class="go">상세페이지 바로가기</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contentswrap">
+                            <img src="./img/pf6.jpeg" alt="">
+                            <h2>계명아트센터<br>리뉴얼</h2>
+                            </div>
+                            <div class="textwrap">
+                                <p>제작기간:4일 <br>디자인:2일 퍼블리싱:2일</p>
+                                <p>HTML5,CSS,<br>jquery</p>
+                                <a class="go">상세페이지 바로가기</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="contentswrap">
+                            <img src="./img/pf5.jpeg" alt="">
+                            <h2>광주시립<br>미술관</h2>
+                            </div>
+                            <div class="textwrap">
+                                    <p>제작기간:2일 <br>퍼블리싱:2일</p>
+                                    <p>HTML5,CSS,<br>반응형</p>
+                                    <a class="go" >상세페이지 바로가기</a>
+                            </div>
+                        </li>
+                        <li><div class="contentswrap">
+                            <img src="./img/pf7.jpeg" alt="">
+                            <h2>바라보다</h2>
+                        </div>
+                            <div class="textwrap">
+                                <p>제작기간:8일 <br> 퍼블리싱:8일</p>
+                                <p>HTML5,CSS,<br>jquery,반응형</p>
+                                <a class="go">상세페이지 바로가기</a>
+                            </div>
+                        </li>
+                        <li><div class="contentswrap">
+                            <img src="./img/pf8.jpeg" alt="">
+                            <h2>바라보다<br>리뉴얼</h2>
+                        </div>
+                            <div class="textwrap">
+                                <p>제작기간:3일 <br>디자인:1일 퍼블리싱:2일</p>
+                                <p>HTML5,CSS,<br>jquery,반응형</p>
+                                <a class="go">상세페이지 바로가기</a>
+                            </div>
+                        </li>
+                        <li><div class="contentswrap">
+                            <img src="./img/pf99.jpeg" alt="">
+                            <h2>윤현몰</h2>
+                        </div>
+                            <div class="textwrap">
+                                <p>제작기간:3일 <br>디자인:1일 퍼블리싱:2일</p>
+                                <p>HTML5,CSS,<br>jquery,반응형</p>
+                                <a class="go">상세페이지 바로가기</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio2" >
+            <h2 class="h2">Portfolio2</h2>
+            <div class="wrap" data-aos="fade-right" data-aos-delay="50"
+            data-aos-duration="2000">
+                <div class="javascript">
+                    <ul>
+                        <li>
+                            <div class="imgbox">
+                            <img src="./img/bug.gif" width="400"alt="">
+                            </div>
+                            <div class="info">
+                            <h2>당근게임🥕</h2>
+                            <p>javascript로 제작</p>
+                            <p>자바스크립트를 사용한 당근게임입니다.<br>
+                            당근을 전부 제거하면 win이라는 modal이 뜹니다.<br>
+                            벌레를 누르거나 타임아웃이 되면 replay라는 modal이 뜨는 게임입니다 <br>
+                            타이머와 배경음악을 더해 긴장감을 높였습니다.
+                            </p>
+                            <a href="https://github.com/jiyeonyun/carrot_game">깃허브바로가기</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="imgbox">
+                            <img src="./img/shoopping.gif" width="200" alt="">
+                            </div>
+                            <div class="info">
+                            <h2>쇼핑리스트🛒</h2>
+                            <p>javascript로 제작</p>
+                            <p>자바스크립트를 사용한 쇼핑리스트입니다.<br>엔터와 버튼클릭으로 쇼핑아이템 추가가 가능하고,<br>
+                                전체삭제버튼과 개별삭제버튼으로 아이템을 삭제할수있습니다.
+                            </p>
+                            <a href="https://github.com/jiyeonyun/shoppinglist_new">깃허브바로가기</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="imgbox">
+                            <img src="./img/reactWeather.gif" width="200"alt="">
+                            </div>
+                            <div class="info">
+                            <h2>기온별 옷추천 웹앱🧣</h2>
+                            <p>react로 제작</p>
+                            <p>리액트를 사용한 기온별 옷추천 웹어플리케이션입니다.<br>
+                            날씨 api를 받아서 날씨 정보를 데이터 바인딩했습니다. <br>
+                            기온별로 조건문을 사용해 기온별 옷차림을 추천하는 어플리케이션입니다.
+                            </p>
+                            <a href="https://github.com/jiyeonyun/carrot_game">깃허브바로가기</a>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
         <!-- thank you -->
-        <section id="thankyou">
+        <section id="thankyou" >
             <h2 class="h2">Thankyou</h2>
-            <div class="wrap">
+            <div class="wrap" data-aos="fade-left" data-aos-delay="50"
+            data-aos-duration="2000">
             <div class="thanks">
                 <div class="ment">
                     <h2>끝까지 봐주셔서 감사합니다.</h2>

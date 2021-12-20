@@ -1,7 +1,7 @@
 $(document).ready(
     function(){
-
-       $('nav ul li a').click(function(){
+        AOS.init();
+        $('nav ul li a').click(function(){
         $(this).css("color","rgb(122, 103, 103)");
         $(this).parent().siblings().children().css("color","#000");
        })
@@ -42,6 +42,13 @@ $(document).ready(
         }
         );
 
+        $('.hamberger').click(function(){
+            $('nav').toggle();
+            $('nav a').click(function(){
+                $('nav').hide();
+            });
+            return false;
+        });
         
 }   
 );

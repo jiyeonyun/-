@@ -1,0 +1,159 @@
+@charset "UTF-8";
+@media screen and (max-width: 768px) {
+  .hamberger{
+    display: block;
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    z-index: 100; 
+  } 
+  .hamberger a{
+    font-size: 30px;
+  }
+  .quick_menu{
+    bottom: 220px;
+  }
+  header h1{ 
+  left: 10px;
+  }
+  header nav{
+  display: none;
+  height: 100vh;
+  background-color: whitesmoke;
+  overflow: hidden;
+  }
+  nav ul li{
+    padding-top: 30px;
+    width: auto;
+    height: auto;
+  }
+  nav ul{
+    
+  flex-direction: column;
+  align-items: center;
+  }
+  .banner_title > p{
+  font-size: 1rem;
+}
+  .me img{
+  width: 200px;
+}
+  .banner_title > a{
+    
+  width: 90px;
+  height: auto;
+  font-size: 11px;
+  }
+  main #about > h2{
+    
+  transform: unset;
+  position: relative;
+  top: 21px;
+  font-size: 24px;
+  }
+  #about .inner{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  #about .main_tit{
+    margin-right: 0;
+    margin-top: 10vh;
+  }
+  #about .skils_list .skils_item{
+    padding: 0;
+  }
+  main #portfolio{
+    padding-top: 40px;
+  }
+  main #portfolio > h2{
+     transform: unset;
+  position: relative;
+  top: 21px;
+  font-size: 24px;
+    margin-bottom: 30px;
+  }
+   main #thankyou > h2{
+     transform: unset;
+  position: relative;
+  top: 21px;
+  font-size: 24px;
+  }
+  main #thankyou .thanks .ment h2{
+    
+  font-size: 32px;
+  margin-bottom: 30px;
+  }
+  main #thankyou .thanks .ment p{
+    
+  font-size: 18px;
+  }
+  main #thankyou .thanks .info{
+  position: static;
+  text-align: left;
+  }
+  main #portfolio .pfwrap{
+display: none;
+  }
+  #portfolio .mobilepfwrap {
+    display: block;
+    margin-top: 70px;
+  }
+  #portfolio .mobilepfwrap ul {
+  margin: 0 30px;
+  text-align: right;
+  }
+ 
+  #portfolio .mobilepfwrap ul li {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #a3a3a3;
+    padding-bottom: 20px;
+    cursor: pointer;
+  }
+  #portfolio .mobilepfwrap ul li img {
+    width: 81px;
+    margin-right: 36px;
+    border-radius: 4px;
+  }
+  #portfolio .mobilepfwrap ul li .textwrap {
+    
+  }
+  #portfolio .mobilepfwrap ul li  h2 {
+    
+  font-size: 16px;
+  line-height: 1.4;
+  }
+  #portfolio .mobilepfwrap ul li .textwrap p {
+    
+  font-size: 13px;
+  }
+  #portfolio .mobilepfwrap ul li .textwrap a{
+  font-size: 12px;
+  display: block;
+  margin-top: 15px;
+  height: 30px;
+  line-height: 2.5;
+  width: 114px;
+  padding-right: 5px;
+  text-align: right;
+  margin-left: 27px;
+  background-color: #453926;
+  color: white;
+  border-radius: 5px;
+  }
+   main #thankyou .thanks .ment{
+    margin-bottom: 50px;
+  }
+  #portfolio .mobilepfwrap .contentswrap{
+    
+  display: flex;
+  width: 65%;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+  }
+}

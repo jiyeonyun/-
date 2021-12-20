@@ -1,74 +1,64 @@
 main {
   text-align: center;
 }
-main #about {
-  padding: 80px 0;
-  position: relative;
-  height: 100%;
-}
 .clickhide {
   display: none;
 }
-main #about > h2 {
+main #about > h2{
   transform: rotate(90deg);
   position: absolute;
   top: 40%;
 }
-main #about .keywords {
-  padding: 80px 0;
+#about .inner {
+  display: flex; justify-content: space-between;
 }
-main #about .keywords ul.key {
+#about .main_tit {
+  margin-top: 30vh; margin-right: 20px; flex-basis: 50%; font-size: 2.4rem;
   display: flex;
-  justify-content: space-evenly;
-  padding: 0;
-  margin: 40px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
 }
-main #about .keywords ul.key li {
+#about .main_tit .skills_icon {
+  position: relative; top: 5px; width: 36px;
 }
-main #about .keywords ul.key li a {
+#about .main_tit p{
+  line-height: 3rem;
+  font-size: 1.2rem;
+  margin-bottom: 40px;
 }
-main #about .keywords ul.key li p {
+#about .main_tit .skillimg{
+
+  width: 200px;
 }
-main #about .keywords p.mention {
-  font-size: 24px;
+#about .main_tit .skillimg li{
+  
+  display: inline-block;
 }
-main #about .keywords a.mention {
-  font-style: italic;
+#about .main_tit .skillimg img{
+  width: 40px;
+  height: 40px;
 }
-main #about .edu {
+#about .skils_list {
+  margin-top: 100px; flex-basis: 60%;
 }
-main #about .edu h2 {
+#about .skils_list .skils_item {
+  margin-bottom: 40px; padding-left: 30px; position: relative;
 }
-main #about .edu ul {
-  display: flex;
-  justify-content: center;
+#about .skils_list .skils_item p {
+  line-height: 3rem; font-size: 1rem;
 }
-main #about .edu ul li {
-  list-style: none;
-  padding: 0 50px;
+#about .skils_list .skils_item span {
+  padding-bottom: 16px; font-size: 1.5rem;
+} 
+#about .skils_list .skils_item span::before {
+  padding-right: 8px; position: absolute; left: 0; font-weight: 600;
 }
-main #about .edu ul li h3 {
+#about.skils_list .skils_item span strong {
+  font-weight: 700;
 }
-main #about .edu ul li p {
-}
-main #about .skill {
-}
-main #about .skill > h2 {
-}
-main #about .skill ul {
-  display: flex;
-  justify-content: center;
-}
-main #about .skill ul li {
-  list-style: none;
-  padding: 0 30px;
-}
-main #about .skill ul li h2 {
-}
-main #about .skill ul li span {
-  display: block;
-}
-main #about .skill ul li img {
+main #portfolio .wrap{
+  
 }
 main #portfolio {
   padding: 80px 0;
@@ -138,11 +128,73 @@ main #portfolio .hop p.go {
   line-height: 4;
   font-size: 14px;
 }
+#portfolio2 {
+
+  padding: 80px 0;
+}
+#portfolio2 .wrap{
+  
+}
+#portfolio2>h2{
+  transform: rotate(90deg);
+  position: absolute;
+  top: 40%;
+}
+#portfolio2 .javascript{
+}
+#portfolio2 .javascript ul{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 100px;
+}
+#portfolio2 .javascript li {
+  margin-bottom: 100px;
+  display: flex;
+  width: 1100px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#portfolio2 .javascript li img{
+  
+}
+#portfolio2 .javascript li .imgbox{
+  width: 500px;
+}
+#portfolio2 .javascript li .info{
+
+  text-align: left;
+  width: 500px;
+}
+#portfolio2 .javascript li h2{
+
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+#portfolio2 .javascript li  p{
+margin-bottom: 20px;
+line-height: 1.2;
+}
+#portfolio2 .javascript li  a{
+
+  display: block;
+  width: 120px;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #583704;
+  color: whitesmoke;
+  border-radius: 8px;
+}
+#portfolio .mobilepfwrap{
+  display: none;
+} 
 main #thankyou {
   position: relative;
   height: 100%;
-  padding: 80px 0;
+  padding-top: 80px; 
   width: 100%;
+  background-color: #f0eccc;
 }
 main #thankyou > h2 {
   transform: rotate(90deg);
@@ -182,6 +234,11 @@ main #thankyou .thanks .info span.adress {
 }
 main #thankyou .thanks .info span.detail {
 }
-
 .wrap {
+}
+main span>i{
+  
+  font-size: 13px;
+  padding-right: 10px;
+  color: #f2d32b;
 }
